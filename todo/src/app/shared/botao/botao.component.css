@@ -1,0 +1,25 @@
+.--container-botao {
+  display: inline-block;
+  background-color: var(--roxo-escuro);
+  padding: 0.5rem 0.7rem;
+  border-radius: 12px;
+}
+
+.--botao {
+  display: flex;
+  flex-direction: row;
+}
+
+.--botao button {
+  background-color: transparent;
+  border: none;
+  color: var(--branco);
+  font-weight: 700;
+  display: block;
+}
+
+.--botao .--icone {
+  font-size: 1.4rem;
+  padding-right: 0.5rem;
+  color: var(--branco);
+}
