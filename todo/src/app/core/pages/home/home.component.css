@@ -6,7 +6,7 @@
 }
 
 .sidebar {
-  width: 250px;
+  width: 345px;
 }
 
 .main-content {
@@ -25,4 +25,5 @@ main {
   flex: 1;
   overflow-y: auto;
   margin: 0;
+  background-color: var(--content);
 }

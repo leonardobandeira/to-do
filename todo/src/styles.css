@@ -1,7 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
 :root {
   --branco: #fff;
+  --preto: #263238;
   --roxo-claro: #6261b4;
   --roxo-escuro: #5554aa;
-  --roxo-link-ativo: #6E6DBA
+  --roxo-link-ativo: #6E6DBA;
+  --content: #F5F5F5;
+
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
 }

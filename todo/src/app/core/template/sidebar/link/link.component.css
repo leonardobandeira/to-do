@@ -1,12 +1,12 @@
 .--link {
   padding: 0.5rem;
+  margin-bottom: 0.5rem;
   border-radius: 8px;
 }
 
 .--link a {
   color: var(--branco);
   text-decoration: none;
-  font-weight: 400;
 }
 
 .--icone {
@@ -15,5 +15,6 @@
 }
 
 .--ativo {
+  font-weight: 600;
   background-color: var(--roxo-link-ativo);
 }

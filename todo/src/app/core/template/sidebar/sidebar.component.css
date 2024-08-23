@@ -4,6 +4,7 @@ aside {
 }
 
 .--header {
+  height: 60px;
   background-color: var(--roxo-escuro);
   display: flex;
   flex-direction: row;
