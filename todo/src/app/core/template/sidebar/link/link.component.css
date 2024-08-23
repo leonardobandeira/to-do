@@ -1,0 +1,19 @@
+.--link {
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.--link a {
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.--icone {
+  color: var(--branco);
+  margin-right: 0.3rem;
+}
+
+.--ativo {
+  background-color: var(--roxo-link-ativo);
+}

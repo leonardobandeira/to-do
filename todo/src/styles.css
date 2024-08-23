@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --branco: #fff;
+  --roxo-claro: #6261b4;
+  --roxo-escuro: #5554aa;
+  --roxo-link-ativo: #6E6DBA
+}

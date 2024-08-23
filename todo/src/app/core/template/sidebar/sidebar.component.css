@@ -1,0 +1,29 @@
+aside {
+  background-color: var(--roxo-claro);
+  height: 100vh;
+}
+
+.--header {
+  background-color: var(--roxo-escuro);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.--menu-icone {
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 20px;
+  color: var(--branco);
+  position: absolute;
+  left: 1rem;
+}
+
+.--listagem{
+  padding: 1rem;
+}
