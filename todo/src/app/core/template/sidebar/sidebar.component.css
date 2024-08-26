@@ -4,7 +4,7 @@
 }
 
 .--header {
-  height: 60px;
+  height: 4.375rem;
   background-color: var(--roxo-escuro);
   display: flex;
   flex-direction: row;
@@ -17,14 +17,18 @@
 }
 
 .--menu-icone {
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   font-weight: bold;
-  width: 20px;
-  color: var(--branco);
+  width: 1.25rem;
+  color: var(--content);
   position: absolute;
   left: 1rem;
 }
 
-.--listagem{
-  padding: 1rem;
+.--links{
+  margin-top: 4.375rem;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }

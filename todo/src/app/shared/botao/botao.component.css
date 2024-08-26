@@ -1,25 +1,32 @@
 .--container-botao {
-  display: inline-block;
-  background-color: var(--roxo-escuro);
-  padding: 0.5rem 0.7rem;
-  border-radius: 12px;
+  display: block;
+  justify-content: center;
+  align-items: center;
 }
 
 .--botao {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--roxo-escuro);
+  height: 3.25rem;
+  width: 10.5rem;
+  border-radius: 0.625rem;
+  padding: 0.875rem;
+  font-size: 1.125rem;
 }
 
 .--botao button {
+  font-weight: 800;
   background-color: transparent;
   border: none;
-  color: var(--branco);
-  font-weight: 700;
+  color: var(--content);
   display: block;
 }
 
 .--botao .--icone {
   font-size: 1.4rem;
-  padding-right: 0.5rem;
-  color: var(--branco);
+  color: var(--content);
+  padding-right: 0.1rem;
 }

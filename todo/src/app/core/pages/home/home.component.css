@@ -1,29 +1,33 @@
+/*  grid base do projeto */
 .layout-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 345px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "sidebar main-content"
+    "sidebar main-content";
   height: 100vh;
-  margin: 0;
-  padding: 0;
 }
 
 .sidebar {
+  grid-area: sidebar;
+  color: #fff;
+  height: 100%;
   width: 345px;
 }
 
-.main-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
+header {
+  grid-area: header;
 }
 
-header {
-  box-sizing: border-box;
+.main-content {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header"
+    "content";
 }
 
 main {
-  flex: 1;
-  overflow-y: auto;
-  margin: 0;
-  background-color: var(--content);
+  grid-area: content;
 }

@@ -1,7 +1,7 @@
 .brand {
-  color: var(--branco);
+  color: var(--content);
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.12rem;
   margin: 0;
   padding: 1em 0;
   height: auto;

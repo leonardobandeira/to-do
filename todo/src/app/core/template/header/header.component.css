@@ -1,5 +1,5 @@
 .--header {
-  height: 60px;
+  height: 4.375rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -12,5 +12,5 @@
 }
 
 .--usuario-card {
-  width: 60px;
+  width: 3.75rem;
 }
