@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ModalTarefaComponent } from "../modal-tarefa/modal-tarefa.component";
+import { ModalTarefaComponent } from '../modal-tarefa/modal-tarefa.component';
 
 @Component({
   selector: 'app-content-title',

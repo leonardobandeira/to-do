@@ -1,7 +1,7 @@
 /*  grid base do projeto */
 .layout-container {
   display: grid;
-  grid-template-columns: 345px 1fr;
+  grid-template-columns: 21.563rem 1fr;
   grid-template-rows: auto 1fr;
   grid-template-areas:
     "sidebar main-content"
@@ -13,7 +13,7 @@
   grid-area: sidebar;
   color: #fff;
   height: 100%;
-  width: 345px;
+  width: 21.563rem;
 }
 
 header {

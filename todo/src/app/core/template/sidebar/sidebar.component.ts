@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BrandComponent } from '../../../shared/brand/brand.component';
+import { BrandComponent } from '../../../components/home/brand/brand.component';
 import { LinkComponent } from './link/link.component';
 
 @Component({

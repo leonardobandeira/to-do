@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BotaoComponent } from '../botao/botao.component';
+import { BotaoComponent } from '../../../shared/botao/botao.component';
 
 @Component({
   selector: 'app-modal-tarefa',
