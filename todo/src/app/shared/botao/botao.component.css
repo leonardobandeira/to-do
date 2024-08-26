@@ -30,3 +30,12 @@
   color: var(--content);
   padding-right: 0.1rem;
 }
+
+.--botao-normal{
+  background-color: var(--lilas);
+  width: 7rem;
+}
+
+.--botao-normal i {
+  display: none;
+}

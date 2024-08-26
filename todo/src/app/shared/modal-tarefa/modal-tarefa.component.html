@@ -13,13 +13,9 @@
     <div class="modal-content">
       <div class="modal-header">
         <p class="mx-auto mt-2">Criar Tarefa</p>
-        <button
-  type="button"
-  class="btn btn-transparent"
-  aria-label="Close"
->
-  <i class="bi bi-x-circle"></i>
-</button>
+        <button type="button" class="btn btn-transparent" aria-label="Close">
+          <i class="bi bi-x-circle"></i>
+        </button>
       </div>
 
       <div class="modal-body">
@@ -55,7 +51,7 @@
             </div>
             <div class="col">
               <select id="inputState" class="input-custom2 ps-2">
-                <option selected>Choose...</option>
+                <option selected>Escolha...</option>
                 <option>...</option>
               </select>
             </div>
@@ -90,23 +86,18 @@
             />
           </div>
           <div class="modal-footer">
-        <!-- First close button -->
-        <button
-          type="button"
-          class="btn btn-secondary"
-          data-bs-dismiss="modal"
-        >
-          Close
-        </button>
-        <!-- Second close button -->
-        <button
-          type="button"
-          class="btn btn-primary"
-          data-bs-dismiss="modal"
-        >
-          Save changes
-        </button>
-      </div>
+            <app-botao
+              data-bs-dismiss="modal"
+              texto="Cancelar"
+              tipo="normal"
+            ></app-botao>
+
+            <app-botao
+              data-bs-dismiss="modal"
+              texto="Criar Tarefa"
+              tipo="add"
+            ></app-botao>
+          </div>
         </form>
       </div>
     </div>

@@ -1,5 +1,5 @@
 <div class="--container-botao">
-  <div class="--botao">
+  <div [ngClass]="botaoClass" class="--botao">
     <i class="bi bi-plus-square --icone"></i>
     <button (click)="onClick()">{{ texto }}</button>
   </div>
