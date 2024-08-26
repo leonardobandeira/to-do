@@ -1,0 +1,36 @@
+/*  grid base do projeto */
+.layout-container {
+  display: grid;
+  grid-template-columns: 21.563rem 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "sidebar main-content"
+    "sidebar main-content";
+  height: 100vh;
+  background-color: var(--content);
+}
+
+.sidebar {
+  grid-area: sidebar;
+  color: var(--content);
+  height: 100%;
+  width: 21.563rem;
+}
+
+header {
+  grid-area: header;
+}
+
+.main-content {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header"
+    "content";
+}
+
+main {
+  grid-area: content;
+  height: 100%;
+
+}

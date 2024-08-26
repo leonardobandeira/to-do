@@ -3,19 +3,3 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 }
-
-.--title{
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--preto);
-  margin: 0;
-  padding: 0;
-}
-
-.--sub-title{
-  font-size: 1.125rem;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  color: var(--preto);
-}

@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { SidebarComponent } from '../../template/sidebar/sidebar.component';
-import { HeaderComponent } from '../../template/header/header.component';
-import { ContentComponent } from '../../template/content/content.component';
+import { ContentComponent } from "../../template/content/content.component";
+import { CartaoProgressoComponent } from "../../../components/home/cartao-progresso/cartao-progresso.component";
+import { GraficoComponent } from "../../../components/home/grafico/grafico.component";
+import { ContentTitleComponent } from "../../../components/home/content-title/content-title.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, SidebarComponent, ContentComponent],
+  imports: [ContentComponent, CartaoProgressoComponent, GraficoComponent, ContentTitleComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
