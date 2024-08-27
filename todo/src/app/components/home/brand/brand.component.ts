@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-brand',
@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './brand.component.css'
 })
 export class BrandComponent {
+  @Input() modo: boolean = false;
 
+  get classes(): string {
+    return `brand ${this.modo ? 'modo' : ''}`;
+  }
 }

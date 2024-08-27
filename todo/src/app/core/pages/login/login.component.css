@@ -17,4 +17,38 @@ label {
 
 input {
   margin-bottom: 10px;
+
+}
+
+:host {
+  display: block;
+  height: 100vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    var(--lilas) 35%,
+    var(--roxo-claro) 100%
+  );
+}
+
+.login-container {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.login-container h1 {
+  margin-bottom: 1.5rem;
+}
+
+.btn{
+    background-color: var(--roxo-escuro);
 }

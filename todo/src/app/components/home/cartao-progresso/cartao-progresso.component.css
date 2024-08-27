@@ -43,3 +43,15 @@
   width: 2.125rem;
   height: 2.125rem;
 }
+
+.-detalhes{
+  display: flex;
+  flex-direction: row;
+}
+
+.--info{
+  font-size: 0.813rem;
+  color: var(--preto);
+  padding-left: 0.3rem;
+  font-weight: 700;
+}

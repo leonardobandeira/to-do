@@ -1,4 +1,4 @@
-<app-botao (clicked)="openModal()"></app-botao>
+<app-botao (clicked)="openModal()" texto="Criar Tarefa" tipo="add"></app-botao>
 
 <div
   class="modal fade"
@@ -13,93 +13,109 @@
     <div class="modal-content">
       <div class="modal-header">
         <p class="mx-auto mt-2">Criar Tarefa</p>
-        <button type="button" class="btn btn-transparent" aria-label="Close">
+        <button
+          type="button"
+          class="btn btn-transparent"
+          aria-label="Close"
+          (click)="closeModal()"
+        >
           <i class="bi bi-x-circle"></i>
         </button>
       </div>
 
-      <div class="modal-body">
-        <form class="--modal-form">
-          <fieldset class="border p-1">
-            <legend class="float-none w-auto ms-4">Título da Tarefa</legend>
-            <input type="text" class="input-custom mb-2" />
-          </fieldset>
+      <form class="--modal-form" #tarefaForm="ngForm">
+        <fieldset class="border p-1">
+          <legend class="float-none w-auto ms-4">Título da Tarefa</legend>
+          <input
+            type="text"
+            class="input-custom mb-2"
+            name="tarefa"
+            ngModel
+            required
+          />
+        </fieldset>
 
-          <textarea
-            name=""
-            id=""
-            class="px-4 pt-2"
-            placeholder="Detalhes da Tarefa"
-          ></textarea>
+        <textarea
+          name="descricao"
+          class="px-4 pt-2"
+          placeholder="Detalhes da Tarefa"
+          ngModel
+        ></textarea>
 
-          <div class="row">
-            <div class="col">
-              <div class="input-group flex-nowrap">
-                <input
-                  type="text"
-                  class="form-control input-custom2"
-                  placeholder="Deadline"
-                  aria-label="Deadline"
-                  aria-describedby="addon-wrapping"
-                />
-                <span
-                  class="input-group-text bg-white border-none --icone"
-                  id="addon-wrapping"
-                  ><i class="bi bi-calendar3"></i
-                ></span>
-              </div>
+        <div class="row">
+          <div class="col">
+            <div class="input-group flex-nowrap">
+              <input
+                type="text"
+                class="form-control input-custom2"
+                placeholder="Deadline"
+                aria-label="Deadline"
+                aria-describedby="addon-wrapping"
+                ngModel
+                name="deadline"
+              />
+              <span
+                class="input-group-text bg-white border-none --icone"
+                id="addon-wrapping"
+              >
+                <i class="bi bi-calendar3"></i>
+              </span>
             </div>
-            <div class="col">
-              <select id="inputState" class="input-custom2 ps-2">
-                <option selected>Escolha...</option>
-                <option>...</option>
-              </select>
-            </div>
           </div>
-          <div class="input-group flex-nowrap">
-            <input
-              type="text"
-              class="form-control input-custom2"
-              placeholder="Responsáveis"
-              aria-label="Responsáveis"
-              aria-describedby="addon-wrapping"
-            />
-            <span
-              class="input-group-text bg-white border-none --icone"
-              id="addon-wrapping"
-              ><i class="bi bi-search"></i
-            ></span>
+          <div class="col">
+            <select id="inputState" class="input-custom2 ps-2" name="Escolha" ngModel>
+              <option selected>Escolha...</option>
+              <option>...</option>
+            </select>
           </div>
+        </div>
+        <div class="input-group flex-nowrap">
+          <input
+            type="text"
+            name="responsavel"
+            class="form-control input-custom2"
+            placeholder="Responsáveis"
+            aria-label="Responsáveis"
+            aria-describedby="addon-wrapping"
+            ngModel
+          />
+          <span
+            class="input-group-text bg-white border-none --icone"
+            id="addon-wrapping"
+          >
+            <i class="bi bi-search"></i>
+          </span>
+        </div>
 
-          <div class="form-group w-100 --fileupload py-3">
-            <i class="bi bi-upload --icone2"></i>
-            <label class="--texto-msg" for="exampleFormControlFile1"
-              >Anexar arquivo</label
-            >
-            <label class="--texto-file"
-              >A better way to tell which species are vulnerable</label
-            >
-            <input
-              type="file"
-              class="form-control-file"
-              id="exampleFormControlFile1"
-            />
-          </div>
-          <div class="modal-footer">
-            <app-botao
-              data-bs-dismiss="modal"
-              texto="Cancelar"
-              tipo="normal"
-            ></app-botao>
+        <div class="form-group w-100 --fileupload py-3">
+          <i class="bi bi-upload --icone2"></i>
+          <label class="--texto-msg" for="exampleFormControlFile1">
+            Anexar arquivo
+          </label>
+          <label class="--texto-file">
+            A better way to tell which species are vulnerable
+          </label>
+          <input
+          name="arquivo"
+            type="file"
+            class="form-control-file"
+            id="exampleFormControlFile1"
+          />
+        </div>
+        <div class="modal-footer">
+          <app-botao
+            texto="Cancelar"
+            tipo="normal"
+            (clicked)="closeModal()"
+          ></app-botao>
 
-            <app-botao
-              data-bs-dismiss="modal"
-              texto="Criar Tarefa"
-              tipo="add"
-            ></app-botao>
-          </div>
-        </form>
-      </div>
+          <app-botao
+            texto="Criar Tarefa"
+            tipo="add"
+            (clicked)="salvarTarefa(tarefaForm)"
+          ></app-botao>
+        </div>
+      </form>
     </div>
   </div>
 </div>

@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
   templateUrl: './grafico.component.html',
   styleUrl: './grafico.component.css'
 })
-export class GraficoComponent {
 
+export class GraficoComponent {
+  data: any[] = [
+    { name: 'Tarefas Concluídas', value: 10 },
+    { name: 'Tarefas Concluídas', value: 15 },
+  ];
 }

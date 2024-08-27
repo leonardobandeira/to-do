@@ -1,0 +1,9 @@
+.--grafico{
+margin-top: 2rem;
+}
+
+.--titulo{
+  font-size: 1.125rem;
+  color: var(--preto);
+  font-weight: 700;
+}

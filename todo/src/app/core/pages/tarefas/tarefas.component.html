@@ -2,5 +2,22 @@
   <app-content-title>
     <h1 class="--title">Tarefas</h1>
     <app-breadcrumb class="--sub-title"></app-breadcrumb>
+
+    <p-table [value]="tarefas" [columns]="cols" class="w-100">
+      <ng-template pTemplate="header" let-columns>
+        <tr>
+          <th *ngFor="let col of columns">
+            {{ col.header }}
+          </th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-tarefa>
+        <tr>
+          <td>{{ tarefa.tarefa }}</td>
+          <td>{{ tarefa.descricao }}</td>
+          <td>{{ tarefa.concluido }}</td>
+        </tr>
+      </ng-template>
+    </p-table>
   </app-content-title>
 </app-content>
