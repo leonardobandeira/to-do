@@ -54,5 +54,7 @@ O console irá mostrar-le quais postar foram alocadas para cada um dos processos
 
 ## Autor
 Leonardo Bandeira de Lucena
+
 github: leonardobandeira
+
 linkedin: https://www.linkedin.com/in/leonardoblucena/
