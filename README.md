@@ -18,6 +18,7 @@ Implementar a interface fornecida no [Figma](https://www.figma.com/proto/x0fSZ0p
 - **Foi implementado a função para salvar os dados básicos do formulário no bd json**.
 - **Criação de Página de Login:** Desenvolvi uma tela de login para o sistema.
 - **Mockup de Tela de Kanban:** Criei um mockup de uma tela de Kanban no Figma, planejada para implementação futura. O mockup pode ser acessado no [Figma](https://www.figma.com/design/ohqnwZnwoHA2Dg4Y9dCvPD/Test---Esig-Grup-%2Bkanban?node-id=0-1&m=dev&t=exePyl2osLGegLlu-1).
+![title](todo/kb.jpeg)
 
 ## Rodando o Projeto Localmente
 
